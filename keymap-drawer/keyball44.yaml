@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - A
   - S
@@ -36,15 +36,15 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-esc$$', h: SNIPE}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-tab$$', h: SCROLL}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace$$', h: SYM}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-esc$$', h: FUN}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: SCROLL}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - SYM
+  - {t: '$$mdi:keyboard-esc$$', h: SCROLL}
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
@@ -91,48 +91,48 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
+  - Sft+Gui+!
+  - {t: Gui+Sft+5, s: Gui+Sft+%}
+  - $$mdi:arrow-up-bold$$
+  - PG UP
+  - BACK
+  - BACK
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - END
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - '6'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - _
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - PgDn
+  - Sft+Ctl+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - {t: '1', s: '!'}
+  - '2'
+  - {t: '3', s: '#'}
   - \
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&pw'
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
@@ -143,11 +143,11 @@ layers:
   - F4
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F5
   - F6
@@ -155,11 +155,11 @@ layers:
   - F8
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F4
+  - F5
+  - F6
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F9
   - F10
@@ -167,31 +167,31 @@ layers:
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F1
+  - F2
+  - F3
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - FUN
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -199,7 +199,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgUp
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-right-click-outline$$
@@ -211,7 +211,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PgDn
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -220,7 +220,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -269,7 +269,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   SNIPE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -309,7 +309,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
