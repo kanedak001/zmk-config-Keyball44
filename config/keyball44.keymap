@@ -66,6 +66,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        MB3 {
+            bindings = <&mkp MCLK>;
+            key-positions = <32 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -137,6 +146,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        sym-num {
+            if-layers = <1 2>;
+            then-layer = <1>;
         };
     };
 };
