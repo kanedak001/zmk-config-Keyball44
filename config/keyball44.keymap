@@ -66,14 +66,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        MB3 {
-            bindings = <&mkp MCLK>;
-            key-positions = <32 33>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
