@@ -73,6 +73,13 @@
             bindings = <&none &kp X &kp A &kp N6 &kp N7 &kp E &kp J &kp Z &kp N2>;
             label = "XA";
         };
+
+        paren: paren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR>;
+            label = "PAREN";
+        };
     };
 
     combos {
@@ -82,6 +89,21 @@
             bindings = <&mkp MB3>;
             key-positions = <32 33>;
             layers = <0>;
+        };
+
+        ctrl-a {
+            bindings = <&kp LC(A)>;
+            key-positions = <13 14>;
+        };
+
+        ctrl-z {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 26>;
+        };
+
+        paren {
+            bindings = <&paren>;
+            key-positions = <39 42>;
         };
     };
 
@@ -113,7 +135,7 @@
             bindings = <
 &none         &kp LS(LEFT_BRACKET)  &kp LS(RBKT)          &kp UP_ARROW          &kp PG_UP      &kp LG(LC(RIGHT))                  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &none
 &none         &kp LS(HOME)          &kp LEFT_ARROW        &kp DOWN              &kp RIGHT      &kp LS(END)                        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp BACKSLASH          &kp DOUBLE_QUOTES  &none
-&kp LEFT_ALT  &none                 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PAGE_DOWN  &kp LC(LG(LEFT))                   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp COMMA              &kp QUESTION       &kp RSHIFT
+&kp LEFT_ALT  &none                 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PAGE_DOWN  &kp LC(LG(LEFT))                   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LESS_THAN          &kp GREATER_THAN   &kp RSHIFT
 &trans        &trans                &pw                   &mo 3                 &kp DELETE                            &kp DELETE  &mo 3                                                                                          &kp TILDE
             >;
         };
