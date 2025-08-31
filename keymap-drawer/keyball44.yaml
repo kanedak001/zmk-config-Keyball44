@@ -124,8 +124,8 @@ layers:
   - '!'
   - '@'
   - '#'
-  - {t: ',', s: <}
-  - '?'
+  - <
+  - '>'
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -319,3 +319,9 @@ combos:
 - p: [32, 33]
   k: '&mkp MB3'
   l: [QWRT]
+- p: [13, 14]
+  k: Ctl+A
+- p: [25, 26]
+  k: Ctl+Z
+- p: [39, 42]
+  k: '&paren'
