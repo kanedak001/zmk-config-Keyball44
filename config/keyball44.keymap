@@ -113,40 +113,40 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&none         &kp Q             &kp W          &kp E      &kp R               &kp T                     &kp Y  &kp U  &kp I     &kp O     &kp P           &none
-&none         &ctrla            &kp S          &kp D      &kp F               &kp G                     &kp H  &kp J  &kp K     &kp L     &mt RCTRL SEMI  &none
-&kp LEFT_ALT  &mt LEFT_SHIFT Z  &kp X          &kp C      &kp V               &kp B                     &kp N  &kp M  &mkp MB1  &mkp MB2  &mt RSHFT RET   &kp LEFT_SHIFT
-&kp LCTRL     &kp LALT          &kp LC(SPACE)  &lt 1 TAB  &mt LEFT_GUI SPACE             &kp BACKSPACE  &mo 1                                             &lt 5 ESCAPE
+&none      &kp Q     &kp W           &kp E           &kp R            &kp T                                &kp Y            &kp U         &kp I            &kp O            &kp P      &none
+&none      &kp A     &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LSHIFT F     &mt LS(LCTRL) G                      &mt RS(RCTRL) H  &mt RSHIFT J  &mt RIGHT_ALT K  &mt RIGHT_GUI L  &kp MINUS  &none
+&none      &kp Z     &kp X           &kp C           &kp V            &kp B                                &kp N            &kp M         &mkp MB1         &mkp MB2         &kp DOT    &none
+&kp LCTRL  &kp LALT  &kp LC(SPACE)   &lt 2 TAB       &mt LCTRL SPACE                       &mt RCTRL BSPC  &lt 1 ENTER                                                                 &lt 5 ESCAPE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp UP_ARROW     &kp PAGE_UP    &kp LA(LEFT)                         &kp N7        &kp N8        &kp N9        &kp N0     &kp MINUS   &none
-&none         &kp HOME          &kp LEFT           &kp DOWN         &kp RIGHT      &kp END                              &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH  &kp APOS    &none
-&kp LEFT_ALT  &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PAGE_DOWN  &kp LA(RIGHT_ARROW)                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp COMMA  &kp PERIOD  &kp RIGHT_SHIFT
-&trans        &trans            &pw                &mo 2            &kp DEL                                 &kp DELETE  &mo 3                                                            &kp GRAVE
+&none   &caps_word  &kp LESS_THAN   &kp EQUAL          &kp GREATER_THAN  &kp CARET                            &kp AMPS            &kp N7               &kp N8            &kp N9              &kp AT       &none
+&none   &kp SLASH   &mt LCMD ASTRK  &mt LEFT_ALT PLUS  &mt LSHIFT MINUS  &mt LS(LCTRL) UNDER                  &mt RS(RCTRL) PIPE  &mt RSHIFT NUMBER_4  &mt RIGHT_ALT N5  &mt RMETA NUMBER_6  &kp INT_YEN  &none
+&none   &kp SEMI    &kp COLON       &kp QUESTION       &kp EXCL          &kp PERCENT                          &kp N0              &kp NUMBER_1         &kp NUMBER_2      &kp NUMBER_3        &kp COMMA    &none
+&trans  &trans      &pw             &mo 3              &kp DEL                                    &kp DELETE  &mo 3                                                                                       &kp TILDE
             >;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&none         &kp LS(LEFT_BRACKET)  &kp LS(RBKT)          &kp UP_ARROW          &kp PG_UP      &kp LG(LC(RIGHT))                  &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &none
-&none         &kp LS(HOME)          &kp LEFT_ARROW        &kp DOWN              &kp RIGHT      &kp LS(END)                        &kp DOLLAR       &kp PERCENT   &kp CARET             &kp BACKSLASH          &kp DOUBLE_QUOTES  &none
-&kp LEFT_ALT  &none                 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp PAGE_DOWN  &kp LC(LG(LEFT))                   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp LESS_THAN          &kp GREATER_THAN   &kp RSHIFT
-&trans        &trans                &pw                   &mo 3                 &kp DELETE                            &kp DELETE  &mo 3                                                                                          &kp TILDE
+&none   &kp LA(LEFT)  &kp LA(RIGHT)  &kp UP_ARROW       &kp PG_UP         &kp C_BRIGHTNESS_INC                  &kp C_VOLUME_UP       &kp LEFT_BRACKET             &kp SINGLE_QUOTE             &kp RIGHT_BRACKET            &kp AT         &none
+&none   &kp HOME      &mt LCMD LEFT  &mt LEFT_ALT DOWN  &mt LSHIFT RIGHT  &mt LS(LCTRL) END                     &mt RS(RCTRL) C_MUTE  &mt RSHIFT LEFT_PARENTHESIS  &mt RIGHT_ALT DOUBLE_QUOTES  &mt RMETA RIGHT_PARENTHESIS  &kp HASH       &none
+&none   &kp C_REWIND  &kp C_PLAY     &kp C_FF           &kp PAGE_DOWN     &kp C_BRIGHTNESS_DEC                  &kp C_VOL_DN          &kp LEFT_BRACE               &kp GRAVE                    &kp RIGHT_BRACE              &kp BACKSLASH  &none
+&trans  &trans        &pw            &mo 3              &kp DELETE                                  &kp DELETE  &mo 3                                                                                                                       &kp TILDE
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&none       &bt BT_SEL 0  &none        &none   &none   &none              &kp F7  &kp F8  &kp F9  &kp F10  &soft_off  &none
-&none       &bt BT_SEL 1  &none        &none   &none   &none              &kp F4  &kp F5  &kp F6  &kp F11  &none      &none
-&bt BT_CLR  &bt BT_SEL 2  &none        &none   &none   &none              &kp F1  &kp F2  &kp F3  &kp F12  &none      &none
-&trans      &trans        &bootloader  &trans  &trans             &trans  &trans                                      &none
+&none       &bt BT_SEL 0  &none        &none   &none   &none              &kp C_AL_CONTROL_PANEL  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none       &bt BT_SEL 1  &none        &none   &none   &none              &kp C_AL_CONTROL_PANEL  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&bt BT_CLR  &bt BT_SEL 2  &none        &none   &none   &none              &kp C_AL_CONTROL_PANEL  &kp F1  &kp F2  &kp F3  &kp F12  &none
+&trans      &trans        &bootloader  &trans  &trans             &trans  &trans                                                   &none
             >;
         };
 
